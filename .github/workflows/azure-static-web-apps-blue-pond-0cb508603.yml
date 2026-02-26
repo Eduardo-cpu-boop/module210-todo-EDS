@@ -59,8 +59,7 @@ jobs:
           urls: |
             https://todo.eduardodasilva.emf-informatique.ch/
           configPath: "./.lighthouserc.json"
-          uploadArtifacts: true
-          artifactName: lighthouse_results
+          uploadArtifacts: false
           temporaryPublicStorage: true
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
